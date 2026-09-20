@@ -1,0 +1,2558 @@
+
+> frontend@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.5 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://169.254.47.74:3000
+- Environments: .env.local
+✓ Ready in 4.5s
+✓ Running next.config.ts took 320ms
+
+○ Compiling / ...
+ HEAD / 200 in 11.5s (next.js: 10.3s, application-code: 1134ms)
+ GET / 200 in 370ms (next.js: 32ms, application-code: 338ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+      <SegmentViewNode type="page" pagePath="page.tsx">
+        <SegmentTrieNode>
+        <Home>
+          <div className="bg-[#f8fafc]">
+            <div>
+            <div className="max-w-[140...">
+              <div className="bg-white r...">
+                <div>
+                <div className="grid grid-...">
+                  <ProductCard p={{id:1,title:"Me...", ...}}>
+                    <LinkComponent href="/products/..." className="bg-white r...">
+                      <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                        <div>
+                        <div className="p-3">
+                          <h3>
+                          <div className="mt-2">
+                            <div>
+                            <div className="text-xs te...">
++                             1,200
+-                             1.200
+                              ...
+                          ...
+                  ...
+              ...
+      ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:16:11)
+    at <anonymous> (src\app\page.tsx:96:42)
+    at Array.map (<anonymous>:1:18)
+    at Home (src\app\page.tsx:96:34)
+  14 |         <div className="mt-2">
+  15 |           <div className="font-bold text-[#FF6A00] text-sm">{formatPrice(p.price_min)} - {formatPrice(p.price_max)}</div>
+> 16 |           <div className="text-xs text-slate-500">MOQ: {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |           ^
+  17 |         </div>
+  18 |         <div className="mt-2 flex items-center gap-1 text-xs">
+  19 |           <span className="truncate text-slate-600">{p.store.name}</span>
+ GET / 200 in 365ms (next.js: 15ms, application-code: 350ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+      <SegmentViewNode type="page" pagePath="page.tsx">
+        <SegmentTrieNode>
+        <Home>
+          <div className="bg-[#f8fafc]">
+            <div>
+            <div className="max-w-[140...">
+              <div className="bg-white r...">
+                <div>
+                <div className="grid grid-...">
+                  <ProductCard p={{id:1,title:"Me...", ...}}>
+                    <LinkComponent href="/products/..." className="bg-white r...">
+                      <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                        <div>
+                        <div className="p-3">
+                          <h3>
+                          <div className="mt-2">
+                            <div>
+                            <div className="text-xs te...">
++                             1,200
+-                             1.200
+                              ...
+                          ...
+                  ...
+              ...
+      ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:16:11)
+    at <anonymous> (src\app\page.tsx:96:42)
+    at Array.map (<anonymous>:1:18)
+    at Home (src\app\page.tsx:96:34)
+  14 |         <div className="mt-2">
+  15 |           <div className="font-bold text-[#FF6A00] text-sm">{formatPrice(p.price_min)} - {formatPrice(p.price_max)}</div>
+> 16 |           <div className="text-xs text-slate-500">MOQ: {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |           ^
+  17 |         </div>
+  18 |         <div className="mt-2 flex items-center gap-1 text-xs">
+  19 |           <span className="truncate text-slate-600">{p.store.name}</span>
+ GET / 200 in 262ms (next.js: 7ms, application-code: 255ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+      <SegmentViewNode type="page" pagePath="page.tsx">
+        <SegmentTrieNode>
+        <Home>
+          <div className="bg-[#f8fafc]">
+            <div>
+            <div className="max-w-[140...">
+              <div className="bg-white r...">
+                <div>
+                <div className="grid grid-...">
+                  <ProductCard p={{id:1,title:"Me...", ...}}>
+                    <LinkComponent href="/products/..." className="bg-white r...">
+                      <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                        <div>
+                        <div className="p-3">
+                          <h3>
+                          <div className="mt-2">
+                            <div>
+                            <div className="text-xs te...">
++                             1,200
+-                             1.200
+                              ...
+                          ...
+                  ...
+              ...
+      ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:16:11)
+    at <anonymous> (src\app\page.tsx:96:42)
+    at Array.map (<anonymous>:1:18)
+    at Home (src\app\page.tsx:96:34)
+  14 |         <div className="mt-2">
+  15 |           <div className="font-bold text-[#FF6A00] text-sm">{formatPrice(p.price_min)} - {formatPrice(p.price_max)}</div>
+> 16 |           <div className="text-xs text-slate-500">MOQ: {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |           ^
+  17 |         </div>
+  18 |         <div className="mt-2 flex items-center gap-1 text-xs">
+  19 |           <span className="truncate text-slate-600">{p.store.name}</span>
+✓ Compiled in 346ms
+✓ Compiled in 349ms
+ GET / 200 in 297ms (next.js: 45ms, application-code: 252ms)
+✓ Compiled in 375ms
+ GET / 200 in 236ms (next.js: 103ms, application-code: 133ms)
+ GET / 200 in 375ms (next.js: 11ms, application-code: 364ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+      <SegmentViewNode type="page" pagePath="page.tsx">
+        <SegmentTrieNode>
+        <Home>
+          <div className="bg-[#f8fafc]">
+            <div>
+            <div className="max-w-[140...">
+              <div className="bg-white r...">
+                <div>
+                <div className="grid grid-...">
+                  <ProductCard p={{id:1,title:"Me...", ...}}>
+                    <LinkComponent href="/products/..." className="bg-white r...">
+                      <a className="bg-white r..." ref={function} onClick={function onClick} ...>
+                        <div>
+                        <div className="p-3">
+                          <h3>
+                          <div className="mt-2">
+                            <div>
+                            <div className="text-xs te...">
++                             1,200
+-                             1.200
+                              ...
+                          ...
+                  ...
+              ...
+      ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:16:11)
+    at <anonymous> (src\app\page.tsx:96:42)
+    at Array.map (<anonymous>:1:18)
+    at Home (src\app\page.tsx:96:34)
+  14 |         <div className="mt-2">
+  15 |           <div className="font-bold text-[#FF6A00] text-sm">{formatPrice(p.price_min)} - {formatPrice(p.price_max)}</div>
+> 16 |           <div className="text-xs text-slate-500">MOQ: {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |           ^
+  17 |         </div>
+  18 |         <div className="mt-2 flex items-center gap-1 text-xs">
+  19 |           <span className="truncate text-slate-600">{p.store.name}</span>
+✓ Compiled in 238ms
+ GET / 200 in 188ms (next.js: 23ms, application-code: 165ms)
+✓ Compiled in 289ms
+ GET / 200 in 178ms (next.js: 32ms, application-code: 146ms)
+✓ Compiled in 204ms
+ HEAD / 200 in 375ms (next.js: 10ms, application-code: 365ms)
+✓ Compiled in 139ms
+ GET / 200 in 121ms (next.js: 22ms, application-code: 99ms)
+✓ Compiled in 159ms
+ GET / 200 in 125ms (next.js: 21ms, application-code: 104ms)
+✓ Compiled in 113ms
+ GET / 200 in 124ms (next.js: 17ms, application-code: 107ms)
+ GET / 200 in 115ms (next.js: 15ms, application-code: 100ms)
+ GET / 200 in 130ms (next.js: 18ms, application-code: 111ms)
+ GET / 200 in 398ms (next.js: 9ms, application-code: 389ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Home>
+              <div className="bg-white">
+                <div>
+                <div className="max-w-[128...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1,title:"Be...", ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+                  ...
+          ...
+        ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at eval (src\app\page.tsx:75:40)
+    at Array.map (<anonymous>:1:18)
+    at Home (src\app\page.tsx:75:32)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET / 200 in 737ms (next.js: 26ms, application-code: 712ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Home>
+              <div className="bg-white">
+                <div>
+                <div className="max-w-[128...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1,title:"Be...", ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+                  ...
+          ...
+        ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at eval (src\app\page.tsx:75:40)
+    at Array.map (<anonymous>:1:18)
+    at Home (src\app\page.tsx:75:32)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET / 200 in 707ms (next.js: 30ms, application-code: 677ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Home>
+              <div className="bg-white">
+                <div>
+                <div className="max-w-[128...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1,title:"Be...", ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+                  ...
+          ...
+        ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at eval (src\app\page.tsx:75:40)
+    at Array.map (<anonymous>:1:18)
+    at Home (src\app\page.tsx:75:32)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET / 200 in 671ms (next.js: 33ms, application-code: 638ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Home>
+              <div className="bg-white">
+                <div>
+                <div className="max-w-[128...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1,title:"Be...", ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+                  ...
+          ...
+        ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at eval (src\app\page.tsx:75:40)
+    at Array.map (<anonymous>:1:18)
+    at Home (src\app\page.tsx:75:32)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET / 200 in 267ms (next.js: 32ms, application-code: 235ms)
+ GET / 200 in 205ms (next.js: 24ms, application-code: 181ms)
+ GET / 200 in 240ms (next.js: 5ms, application-code: 235ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <Home>
+              <div className="bg-white">
+                <div>
+                <div className="max-w-[128...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1,title:"Be...", ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+                  ...
+          ...
+        ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at eval (src\app\page.tsx:75:40)
+    at Array.map (<anonymous>:1:18)
+    at Home (src\app\page.tsx:75:32)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET /products?category=komoditi-petani 200 in 1233ms (next.js: 1173ms, application-code: 60ms)
+ GET /products?category=tanaman-hias 200 in 56ms (next.js: 14ms, application-code: 42ms)
+ GET /products?category=tanaman-hias 200 in 42ms (next.js: 7ms, application-code: 35ms)
+ GET /products?category=bunga-florist 200 in 41ms (next.js: 6ms, application-code: 35ms)
+ GET /products?category=kerajinan-desa 200 in 44ms (next.js: 8ms, application-code: 36ms)
+ GET /products?category=olahan-pangan 200 in 42ms (next.js: 7ms, application-code: 35ms)
+ GET /products?category=benih-bibit 200 in 39ms (next.js: 7ms, application-code: 32ms)
+ GET /products?category=lainnya 200 in 41ms (next.js: 7ms, application-code: 34ms)
+ GET /products?category=komoditi-petani 200 in 41ms (next.js: 6ms, application-code: 35ms)
+ GET /products?category=barang-bekas 200 in 44ms (next.js: 7ms, application-code: 36ms)
+ GET /products?category=tanaman-hias 200 in 43ms (next.js: 7ms, application-code: 36ms)
+ GET /cart 200 in 1056ms (next.js: 1001ms, application-code: 55ms)
+ GET /cart 200 in 47ms (next.js: 7ms, application-code: 40ms)
+ GET /products?category=komoditi-petani 200 in 50ms (next.js: 9ms, application-code: 41ms)
+✓ Compiled in 336ms
+ GET /products?category=komoditi-petani 200 in 92ms (next.js: 22ms, application-code: 69ms)
+✓ Compiled in 953ms
+ GET /products?category=komoditi-petani 200 in 97ms (next.js: 17ms, application-code: 80ms)
+ GET /products?category=komoditi-petani 200 in 344ms (next.js: 7ms, application-code: 337ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="page" pagePath="products/p...">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+        <ProductsPage params={Promise} searchParams={Promise}>
+          <div className="max-w-[140...">
+            <div>
+            <div className="mt-4 grid ...">
+              <aside>
+              <div className="col-span-1...">
+                <div>
+                <div className="grid grid-...">
+                  <ProductCard p={{id:1, ...}}>
+                    <LinkComponent href="/products/..." className="group bg-w...">
+                      <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                        <div>
+                        <div className="pt-3 pb-1">
+                          <div>
+                          <h3>
+                          <div>
+                          <div className="text-[11px...">
++                           4,300
+-                           4.300
+                            ...
+                          ...
+                  ...
+    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:52:30)
+    at Array.map (<anonymous>)
+    at ProductsPage (src/app/products/page.tsx:52:22)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+✓ Compiled in 330ms
+ GET /products?category=komoditi-petani 200 in 187ms (next.js: 25ms, application-code: 163ms)
+✓ Compiled in 232ms
+ GET /products?category=barang-bekas 200 in 50ms (next.js: 9ms, application-code: 41ms)
+ GET /products?category=bunga-florist 200 in 55ms (next.js: 9ms, application-code: 47ms)
+ GET /products/buket-mawar-merah-20-3 200 in 4.6s (next.js: 4.5s, application-code: 115ms)
+ GET /products 200 in 362ms (next.js: 84ms, application-code: 277ms)
+ GET /products?category=komoditi-petani 200 in 347ms (next.js: 100ms, application-code: 247ms)
+ GET /products?category=komoditi-petani 200 in 66ms (next.js: 12ms, application-code: 54ms)
+ GET /products/cabai-rawit-merah-1kg-2 200 in 91ms (next.js: 30ms, application-code: 61ms)
+⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ignore-listed frames {
+  digest: '2758455720'
+}
+⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ignore-listed frames {
+  digest: '2758455720'
+}
+⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ignore-listed frames {
+  digest: '3868254732'
+}
+⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ignore-listed frames {
+  digest: '2671011788'
+}
+⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ignore-listed frames {
+  digest: '2671011788'
+}
+⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at ignore-listed frames {
+  digest: '2671011788'
+}
+ GET /suppliers 200 in 5.5s (next.js: 2.2s, application-code: 3.3s)
+[browser] Uncaught Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+ GET /products? 200 in 435ms (next.js: 44ms, application-code: 391ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="page" pagePath="products/p...">
+      <SegmentTrieNode>
+      <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+        <ProductsPage params={Promise} searchParams={Promise}>
+          <div className="max-w-[128...">
+            <div>
+            <div className="mt-4 grid ...">
+              <aside>
+              <div className="col-span-1...">
+                <div>
+                <div className="grid grid-...">
+                  <ProductCard p={{id:1, ...}}>
+                    <LinkComponent href="/products/..." className="group bg-w...">
+                      <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                        <div>
+                        <div className="pt-3 pb-1">
+                          <div>
+                          <h3>
+                          <div>
+                          <div className="text-[11px...">
++                           4,300
+-                           4.300
+                            ...
+                          ...
+                  ...
+    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:73:32)
+    at Array.map (<anonymous>)
+    at ProductsPage (src/app/products/page.tsx:73:24)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET /products/beras-pandan-wangi-5kg-1 200 in 360ms (next.js: 298ms, application-code: 62ms)
+ GET /products/beras-pandan-wangi-5kg-1 200 in 165ms (next.js: 51ms, application-code: 114ms)
+ GET /products/beras-pandan-wangi-5kg-1 200 in 438ms (next.js: 336ms, application-code: 102ms)
+ GET /cart 200 in 181ms (next.js: 25ms, application-code: 156ms)
+ GET /products 200 in 68ms (next.js: 14ms, application-code: 54ms)
+✓ Compiled in 185ms
+ GET /products/cabai-rawit-merah-1kg-2 200 in 509ms (next.js: 330ms, application-code: 179ms)
+ GET /products/cabai-rawit-merah-1kg-2 200 in 131ms (next.js: 16ms, application-code: 114ms)
+ GET /cart 200 in 140ms (next.js: 17ms, application-code: 123ms)
+ GET /products 200 in 241ms (next.js: 92ms, application-code: 149ms)
+ GET /products 200 in 101ms (next.js: 10ms, application-code: 91ms)
+ GET /products?category=kerajinan-desa 200 in 67ms (next.js: 7ms, application-code: 60ms)
+ GET /products?category=kerajinan-desa 200 in 65ms (next.js: 13ms, application-code: 52ms)
+ GET /products?category=kerajinan-desa 200 in 158ms (next.js: 9ms, application-code: 150ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+      <ProductsPage params={Promise} searchParams={Promise}>
+        <Suspense fallback={<div>}>
+          <ProductsContent>
+            <div className="max-w-[128...">
+              <div>
+              <div className="mt-4 grid ...">
+                <aside>
+                <div className="col-span-1...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:10, ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             2,100
+-                             2.100
+                              ...
+                            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:70:32)
+    at Array.map (<anonymous>)
+    at ProductsContent (src/app/products/page.tsx:70:24)
+    at ProductsPage (src/app/products/page.tsx:79:137)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET /products?category=komoditi-petani 200 in 52ms (next.js: 8ms, application-code: 44ms)
+✓ Compiled in 167ms
+ GET /products?category=komoditi-petani 200 in 155ms (next.js: 39ms, application-code: 116ms)
+✓ Compiled in 151ms
+ GET /products?category=komoditi-petani 200 in 138ms (next.js: 44ms, application-code: 94ms)
+ GET /products/telur-ayam-kampung-30-8 200 in 391ms (next.js: 319ms, application-code: 72ms)
+ GET /products/telur-ayam-kampung-30-8 200 in 210ms (next.js: 76ms, application-code: 135ms)
+ GET /cart 200 in 147ms (next.js: 20ms, application-code: 128ms)
+ GET /suppliers 200 in 58ms (next.js: 18ms, application-code: 39ms)
+ GET /products 200 in 59ms (next.js: 15ms, application-code: 44ms)
+ GET /products/buket-mawar-merah-20-3 200 in 332ms (next.js: 278ms, application-code: 54ms)
+ GET /products/papan-bunga-duka-cita-4 200 in 329ms (next.js: 273ms, application-code: 56ms)
+ GET /products/benih-padi-inpari-32-11 200 in 342ms (next.js: 281ms, application-code: 61ms)
+ GET /cart 200 in 119ms (next.js: 6ms, application-code: 113ms)
+ GET /products?category=komoditi-petani 200 in 50ms (next.js: 9ms, application-code: 41ms)
+ GET /products?category=kerajinan-desa 200 in 49ms (next.js: 8ms, application-code: 40ms)
+ GET /products?category=kerajinan-tangan 200 in 45ms (next.js: 9ms, application-code: 36ms)
+ GET /products/pot-terakota-20cm-10 200 in 333ms (next.js: 279ms, application-code: 54ms)
+ GET /cart 200 in 48ms (next.js: 6ms, application-code: 41ms)
+ GET /suppliers 200 in 63ms (next.js: 6ms, application-code: 57ms)
+ GET /suppliers 200 in 46ms (next.js: 8ms, application-code: 38ms)
+ GET /products/beras-pandan-wangi-5kg-1 200 in 445ms (next.js: 275ms, application-code: 170ms)
+ GET /products 200 in 51ms (next.js: 9ms, application-code: 41ms)
+ GET /products 200 in 17ms (next.js: 6ms, application-code: 12ms)
+ GET /products 200 in 42ms (next.js: 7ms, application-code: 35ms)
+ GET /products 200 in 228ms (next.js: 8ms, application-code: 220ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+      <ProductsPage params={Promise} searchParams={Promise}>
+        <Suspense fallback={<div>}>
+          <ProductsContent>
+            <div className="max-w-[128...">
+              <div>
+              <div className="mt-4 grid ...">
+                <aside>
+                <div className="col-span-1...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1, ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:70:32)
+    at Array.map (<anonymous>)
+    at ProductsContent (src/app/products/page.tsx:70:24)
+    at ProductsPage (src/app/products/page.tsx:79:137)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET /products 200 in 199ms (next.js: 5ms, application-code: 194ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+      <ProductsPage params={Promise} searchParams={Promise}>
+        <Suspense fallback={<div>}>
+          <ProductsContent>
+            <div className="max-w-[128...">
+              <div>
+              <div className="mt-4 grid ...">
+                <aside>
+                <div className="col-span-1...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1, ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:70:32)
+    at Array.map (<anonymous>)
+    at ProductsContent (src/app/products/page.tsx:70:24)
+    at ProductsPage (src/app/products/page.tsx:79:137)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET /products 200 in 168ms (next.js: 7ms, application-code: 162ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+      <ProductsPage params={Promise} searchParams={Promise}>
+        <Suspense fallback={<div>}>
+          <ProductsContent>
+            <div className="max-w-[128...">
+              <div>
+              <div className="mt-4 grid ...">
+                <aside>
+                <div className="col-span-1...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1, ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:70:32)
+    at Array.map (<anonymous>)
+    at ProductsContent (src/app/products/page.tsx:70:24)
+    at ProductsPage (src/app/products/page.tsx:79:137)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET /products 200 in 234ms (next.js: 9ms, application-code: 226ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+      <ProductsPage params={Promise} searchParams={Promise}>
+        <Suspense fallback={<div>}>
+          <ProductsContent>
+            <div className="max-w-[128...">
+              <div>
+              <div className="mt-4 grid ...">
+                <aside>
+                <div className="col-span-1...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1, ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:70:32)
+    at Array.map (<anonymous>)
+    at ProductsContent (src/app/products/page.tsx:70:24)
+    at ProductsPage (src/app/products/page.tsx:79:137)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET /products 200 in 191ms (next.js: 5ms, application-code: 186ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+      <ProductsPage params={Promise} searchParams={Promise}>
+        <Suspense fallback={<div>}>
+          <ProductsContent>
+            <div className="max-w-[128...">
+              <div>
+              <div className="mt-4 grid ...">
+                <aside>
+                <div className="col-span-1...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1, ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:70:32)
+    at Array.map (<anonymous>)
+    at ProductsContent (src/app/products/page.tsx:70:24)
+    at ProductsPage (src/app/products/page.tsx:79:137)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+⚠ Fast Refresh had to perform a full reload when ./src/components/CartContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+✓ Compiled in 276ms
+ GET /products 200 in 363ms (next.js: 40ms, application-code: 324ms)
+ GET /products 200 in 206ms (next.js: 10ms, application-code: 196ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+      <ProductsPage params={Promise} searchParams={Promise}>
+        <Suspense fallback={<div>}>
+          <ProductsContent>
+            <div className="max-w-[128...">
+              <div>
+              <div className="mt-4 grid ...">
+                <aside>
+                <div className="col-span-1...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1, ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:70:32)
+    at Array.map (<anonymous>)
+    at ProductsContent (src/app/products/page.tsx:70:24)
+    at ProductsPage (src/app/products/page.tsx:79:137)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET /products 200 in 205ms (next.js: 18ms, application-code: 186ms)
+✓ Compiled in 296ms
+ GET /products 200 in 80ms (next.js: 10ms, application-code: 70ms)
+✓ Compiled in 224ms
+ GET /products 200 in 650ms (next.js: 290ms, application-code: 360ms)
+ GET /products 200 in 295ms (next.js: 10ms, application-code: 286ms)
+ GET /products 200 in 296ms (next.js: 10ms, application-code: 286ms)
+ GET /products 200 in 294ms (next.js: 27ms, application-code: 267ms)
+ GET /products 200 in 267ms (next.js: 10ms, application-code: 258ms)
+ GET /products 200 in 333ms (next.js: 13ms, application-code: 320ms)
+ GET /products 200 in 339ms (next.js: 11ms, application-code: 329ms)
+ GET /products 200 in 315ms (next.js: 39ms, application-code: 276ms)
+ GET /products 200 in 265ms (next.js: 9ms, application-code: 256ms)
+ GET /products 200 in 258ms (next.js: 9ms, application-code: 248ms)
+ GET /products 200 in 248ms (next.js: 14ms, application-code: 234ms)
+ GET /products 200 in 240ms (next.js: 9ms, application-code: 230ms)
+ GET /products 200 in 253ms (next.js: 9ms, application-code: 244ms)
+ GET /products 200 in 260ms (next.js: 13ms, application-code: 247ms)
+ GET /products 200 in 268ms (next.js: 7ms, application-code: 261ms)
+ GET /products 200 in 291ms (next.js: 12ms, application-code: 279ms)
+ GET /products 200 in 208ms (next.js: 16ms, application-code: 192ms)
+ GET /products 200 in 116ms (next.js: 11ms, application-code: 105ms)
+✓ Compiled in 224ms
+ GET /products 200 in 715ms (next.js: 233ms, application-code: 482ms)
+ GET /products 200 in 495ms (next.js: 12ms, application-code: 483ms)
+ GET /products 200 in 472ms (next.js: 11ms, application-code: 461ms)
+ GET /products 200 in 280ms (next.js: 9ms, application-code: 270ms)
+ GET /products 200 in 230ms (next.js: 12ms, application-code: 218ms)
+ GET /products 200 in 230ms (next.js: 11ms, application-code: 218ms)
+ GET /products 200 in 237ms (next.js: 9ms, application-code: 227ms)
+ GET /products 200 in 245ms (next.js: 8ms, application-code: 237ms)
+ GET /products 200 in 250ms (next.js: 7ms, application-code: 243ms)
+ GET /products 200 in 250ms (next.js: 8ms, application-code: 242ms)
+ GET /products 200 in 274ms (next.js: 9ms, application-code: 266ms)
+ GET /products 200 in 284ms (next.js: 9ms, application-code: 276ms)
+ GET /products 200 in 336ms (next.js: 12ms, application-code: 324ms)
+ GET /products 200 in 342ms (next.js: 7ms, application-code: 335ms)
+ GET /products 200 in 377ms (next.js: 9ms, application-code: 368ms)
+ GET /products 200 in 566ms (next.js: 15ms, application-code: 551ms)
+ GET /products 200 in 463ms (next.js: 14ms, application-code: 449ms)
+ GET /products 200 in 424ms (next.js: 54ms, application-code: 370ms)
+ GET /products 200 in 206ms (next.js: 13ms, application-code: 194ms)
+ GET /products 200 in 104ms (next.js: 9ms, application-code: 95ms)
+ GET /products 200 in 714ms (next.js: 7ms, application-code: 708ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+      <ProductsPage params={Promise} searchParams={Promise}>
+        <Suspense fallback={<div>}>
+          <ProductsContent>
+            <div className="max-w-[128...">
+              <div>
+              <div className="mt-4 grid ...">
+                <aside>
+                <div className="col-span-1...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:1, ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             4,300
+-                             4.300
+                              ...
+                            ...
+                    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:70:32)
+    at Array.map (<anonymous>)
+    at ProductsContent (src/app/products/page.tsx:70:24)
+    at ProductsPage (src/app/products/page.tsx:79:137)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+ GET /suppliers 200 in 69ms (next.js: 28ms, application-code: 41ms)
+ GET /products 200 in 42ms (next.js: 7ms, application-code: 35ms)
+ GET /products/cabai-rawit-merah-1kg-2 200 in 344ms (next.js: 296ms, application-code: 48ms)
+ GET /cart 200 in 155ms (next.js: 33ms, application-code: 122ms)
+ GET /products 200 in 44ms (next.js: 7ms, application-code: 37ms)
+ GET /products?category=benih-bibit 200 in 41ms (next.js: 6ms, application-code: 35ms)
+ GET /products/benih-padi-inpari-32-11 200 in 329ms (next.js: 270ms, application-code: 59ms)
+ GET /cart 200 in 140ms (next.js: 6ms, application-code: 134ms)
+ GET /cart 200 in 124ms (next.js: 7ms, application-code: 117ms)
+ GET /products 200 in 46ms (next.js: 7ms, application-code: 39ms)
+ GET /products?category=komoditi-petani 200 in 50ms (next.js: 6ms, application-code: 44ms)
+ GET /products/telur-ayam-kampung-30-8 200 in 338ms (next.js: 275ms, application-code: 63ms)
+ GET /cart 200 in 117ms (next.js: 6ms, application-code: 110ms)
+✓ Compiled in 256ms
+ GET /cart 200 in 115ms (next.js: 23ms, application-code: 91ms)
+⚠ Fast Refresh had to perform a full reload when ./src/components/CartContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+✓ Compiled in 471ms
+ GET /cart 200 in 298ms (next.js: 30ms, application-code: 267ms)
+ GET /cart 200 in 178ms (next.js: 14ms, application-code: 165ms)
+ GET /cart 200 in 123ms (next.js: 11ms, application-code: 112ms)
+ GET /cart 200 in 112ms (next.js: 5ms, application-code: 107ms)
+ GET /cart 200 in 115ms (next.js: 7ms, application-code: 108ms)
+ GET /cart 200 in 124ms (next.js: 6ms, application-code: 118ms)
+ GET /products 200 in 59ms (next.js: 18ms, application-code: 42ms)
+ GET /products/beras-pandan-wangi-5kg-1 200 in 355ms (next.js: 293ms, application-code: 62ms)
+ GET /cart 200 in 128ms (next.js: 6ms, application-code: 122ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <link>
+    <script>
+    <RootLayout>
+      <html lang="id" className="inter_5901...">
+        <body className="min-h-scre...">
+          <CartProvider>
+            <Suspense fallback={{...}}>
+              <Header>
+                <header className="sticky top...">
+                  <div>
+                  <div className="border-b b...">
+                    <div className="max-w-[128...">
+                      <LinkComponent>
+                      <nav>
+                      <div>
+                      <div className="flex items...">
+                        <LinkComponent>
+                        <LinkComponent>
+                        <button>
+                        <LinkComponent href="/cart" className="flex flex-...">
+                          <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                            <svg>
+                            <span
++                             className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px..."
+-                             className="text-[9px] tracking-widest uppercase hidden lg:block"
+                            >
++                             1
+-                             Bag
+                            ...
+                  ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at span (<anonymous>)
+    at Header (src/components/Header.tsx:58:27)
+    at RootLayout (src\app\layout.tsx:22:13)
+  56 |             <Link href="/cart" className="flex flex-col items-center gap-1 relative">
+  57 |               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 ...
+> 58 |               {count>0 && <span className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] flex items-center justify-center rounded-full px-1">{count}</span>}
+     |                           ^
+  59 |               <span className="text-[9px] tracking-widest uppercase hidden lg:block">Bag</span>
+  60 |             </Link>
+  61 |           </div>
+ GET /checkout 200 in 881ms (next.js: 834ms, application-code: 48ms)
+ GET /cart 200 in 140ms (next.js: 20ms, application-code: 120ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <link>
+    <script>
+    <RootLayout>
+      <html lang="id" className="inter_5901...">
+        <body className="min-h-scre...">
+          <CartProvider>
+            <Suspense fallback={{...}}>
+              <Header>
+                <header className="sticky top...">
+                  <div>
+                  <div className="border-b b...">
+                    <div className="max-w-[128...">
+                      <LinkComponent>
+                      <nav>
+                      <div>
+                      <div className="flex items...">
+                        <LinkComponent>
+                        <LinkComponent>
+                        <button>
+                        <LinkComponent href="/cart" className="flex flex-...">
+                          <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                            <svg>
+                            <span
++                             className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px..."
+-                             className="text-[9px] tracking-widest uppercase hidden lg:block"
+                            >
++                             1
+-                             Bag
+                            ...
+                  ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at span (<anonymous>)
+    at Header (src/components/Header.tsx:58:27)
+    at RootLayout (src\app\layout.tsx:22:13)
+  56 |             <Link href="/cart" className="flex flex-col items-center gap-1 relative">
+  57 |               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 ...
+> 58 |               {count>0 && <span className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] flex items-center justify-center rounded-full px-1">{count}</span>}
+     |                           ^
+  59 |               <span className="text-[9px] tracking-widest uppercase hidden lg:block">Bag</span>
+  60 |             </Link>
+  61 |           </div>
+ GET /products 200 in 55ms (next.js: 13ms, application-code: 41ms)
+ GET /cart 200 in 43ms (next.js: 7ms, application-code: 37ms)
+ GET /products 200 in 45ms (next.js: 7ms, application-code: 38ms)
+ GET /rfq 200 in 955ms (next.js: 910ms, application-code: 45ms)
+ GET /suppliers 200 in 50ms (next.js: 12ms, application-code: 39ms)
+ GET /suppliers 200 in 45ms (next.js: 7ms, application-code: 38ms)
+ GET /products?category=lainnya 200 in 49ms (next.js: 10ms, application-code: 39ms)
+ GET /suppliers 200 in 41ms (next.js: 6ms, application-code: 35ms)
+ GET /products 200 in 47ms (next.js: 6ms, application-code: 41ms)
+ GET /products?category=komoditi-petani 200 in 43ms (next.js: 6ms, application-code: 37ms)
+ GET /products?category=komoditi-petani 200 in 49ms (next.js: 11ms, application-code: 38ms)
+ GET /products?category=barang-bekas 200 in 43ms (next.js: 6ms, application-code: 37ms)
+ GET /products?category=bunga-florist 200 in 45ms (next.js: 7ms, application-code: 38ms)
+ GET /products?category=tanaman-hias 200 in 54ms (next.js: 9ms, application-code: 44ms)
+ GET /products?category=kerajinan-tangan 200 in 41ms (next.js: 7ms, application-code: 35ms)
+ GET /products?category=olahan-pangan 200 in 46ms (next.js: 7ms, application-code: 38ms)
+ GET /products?category=benih-bibit 200 in 51ms (next.js: 6ms, application-code: 45ms)
+ GET /products?category=lainnya 200 in 45ms (next.js: 6ms, application-code: 39ms)
+ GET /products?category=barang-bekas 200 in 48ms (next.js: 7ms, application-code: 41ms)
+ GET /products?category=komoditi-petani 200 in 47ms (next.js: 10ms, application-code: 38ms)
+ GET /products/beras-pandan-wangi-5kg-1 200 in 340ms (next.js: 282ms, application-code: 58ms)
+ GET /cart 200 in 130ms (next.js: 7ms, application-code: 123ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <link>
+    <script>
+    <RootLayout>
+      <html lang="id" className="inter_5901...">
+        <body className="min-h-scre...">
+          <CartProvider>
+            <Suspense fallback={{...}}>
+              <Header>
+                <header className="sticky top...">
+                  <div>
+                  <div className="border-b b...">
+                    <div className="max-w-[128...">
+                      <LinkComponent>
+                      <nav>
+                      <div>
+                      <div className="flex items...">
+                        <LinkComponent>
+                        <LinkComponent>
+                        <button>
+                        <LinkComponent href="/cart" className="flex flex-...">
+                          <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                            <svg>
+                            <span
++                             className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px..."
+-                             className="text-[9px] tracking-widest uppercase hidden lg:block"
+                            >
++                             1
+-                             Bag
+                            ...
+                  ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at span (<anonymous>)
+    at Header (src/components/Header.tsx:58:27)
+    at RootLayout (src\app\layout.tsx:22:13)
+  56 |             <Link href="/cart" className="flex flex-col items-center gap-1 relative">
+  57 |               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 ...
+> 58 |               {count>0 && <span className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] flex items-center justify-center rounded-full px-1">{count}</span>}
+     |                           ^
+  59 |               <span className="text-[9px] tracking-widest uppercase hidden lg:block">Bag</span>
+  60 |             </Link>
+  61 |           </div>
+ GET /checkout 200 in 50ms (next.js: 10ms, application-code: 40ms)
+ GET /orders?success=INV89737685 200 in 607ms (next.js: 553ms, application-code: 54ms)
+ GET /products 200 in 55ms (next.js: 16ms, application-code: 39ms)
+ GET /products?category=olahan-pangan 200 in 60ms (next.js: 8ms, application-code: 52ms)
+ GET /products?category=olahan-pangan 200 in 135ms (next.js: 8ms, application-code: 128ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <ClientPageRoot Component={function ProductsPage} serverProvidedParams={{...}}>
+      <ProductsPage params={Promise} searchParams={Promise}>
+        <Suspense fallback={<div>}>
+          <ProductsContent>
+            <div className="max-w-[128...">
+              <div>
+              <div className="mt-4 grid ...">
+                <aside>
+                <div className="col-span-1...">
+                  <div>
+                  <div className="grid grid-...">
+                    <ProductCard p={{id:9, ...}}>
+                      <LinkComponent href="/products/..." className="group bg-w...">
+                        <a className="group bg-w..." ref={function} onClick={function onClick} ...>
+                          <div>
+                          <div className="pt-3 pb-1">
+                            <div>
+                            <h3>
+                            <div>
+                            <div className="text-[11px...">
++                             1,500
+-                             1.500
+                              ...
+                            ...
+                    ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProductCard (src/components/ProductCard.tsx:22:9)
+    at <unknown> (src/app/products/page.tsx:70:32)
+    at Array.map (<anonymous>)
+    at ProductsContent (src/app/products/page.tsx:70:24)
+    at ProductsPage (src/app/products/page.tsx:79:137)
+  20 |           {p.price_max!==p.price_min && <span className="text-[11px] text-neutral-400 line-through">{formatPrice(p.price_max)}</span>}
+  21 |         </div>
+> 22 |         <div className="text-[11px] text-neutral-500 mt-1">MOQ {p.moq} {p.unit} • {p.sold.toLocaleString()} terjual</div>
+     |         ^
+  23 |         <div className="mt-1.5 flex items-center gap-1 text-[11px]">
+  24 |           <span className="text-black">★ {p.rating}</span><span className="text-neutral-400">({p.sold})</span>
+  25 |           {p.store.badge==='gold' && <span className="ml-auto text-[9px] tracking-widest uppercase font-bold border border-black px-1.5 py-0.5">Gold</span>}
+✓ Compiled in 255ms
+ GET /products?category=olahan-pangan 200 in 99ms (next.js: 18ms, application-code: 81ms)
+ GET /products?category=olahan-pangan 200 in 203ms (next.js: 8ms, application-code: 195ms)
+ GET /products?category=olahan-pangan 200 in 77ms (next.js: 7ms, application-code: 69ms)
+ GET /products?category=olahan-pangan 200 in 77ms (next.js: 8ms, application-code: 69ms)
+ GET /products?category=olahan-pangan 200 in 140ms (next.js: 6ms, application-code: 134ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <link>
+    <script>
+    <RootLayout>
+      <html lang="id" className="inter_5901...">
+        <body className="min-h-scre...">
+          <CartProvider>
+            <Suspense fallback={{...}}>
+              <Header>
+                <header className="sticky top...">
+                  <div>
+                  <div className="border-b b...">
+                    <div className="max-w-[128...">
+                      <LinkComponent>
+                      <nav>
+                      <div>
+                      <div className="flex items...">
+                        <LinkComponent>
+                        <LinkComponent>
+                        <button>
+                        <LinkComponent href="/cart" className="flex flex-...">
+                          <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                            <svg>
+                            <span
++                             className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px..."
+-                             className="text-[9px] tracking-widest uppercase hidden lg:block"
+                            >
++                             3
+-                             Bag
+                            ...
+                  ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at span (<anonymous>)
+    at Header (src/components/Header.tsx:58:27)
+    at RootLayout (src\app\layout.tsx:22:13)
+  56 |             <Link href="/cart" className="flex flex-col items-center gap-1 relative">
+  57 |               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 ...
+> 58 |               {count>0 && <span className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] flex items-center justify-center rounded-full px-1">{count}</span>}
+     |                           ^
+  59 |               <span className="text-[9px] tracking-widest uppercase hidden lg:block">Bag</span>
+  60 |             </Link>
+  61 |           </div>
+ GET /products?category=olahan-pangan 200 in 150ms (next.js: 9ms, application-code: 142ms)
+⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+▲ Next.js 16.3.5 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://169.254.47.74:3000
+- Environments: .env.local
+✓ Ready in 3.6s
+✓ Running next.config.ts took 116ms
+
+ GET /products?category=olahan-pangan 200 in 3.2s (next.js: 2.4s, application-code: 863ms)
+ GET /products?category=olahan-pangan 200 in 3.2s (next.js: 2.4s, application-code: 805ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <link>
+    <script>
+    <RootLayout>
+      <html lang="id" className="inter_5901...">
+        <body className="min-h-scre...">
+          <CartProvider>
+            <Suspense fallback={{...}}>
+              <Header>
+                <header className="sticky top...">
+                  <div>
+                  <div className="border-b b...">
+                    <div className="max-w-[128...">
+                      <LinkComponent>
+                      <nav>
+                      <div>
+                      <div className="flex items...">
+                        <LinkComponent>
+                        <LinkComponent>
+                        <button>
+                        <LinkComponent href="/cart" className="flex flex-...">
+                          <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                            <svg>
+                            <span
++                             className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px..."
+-                             className="text-[9px] tracking-widest uppercase hidden lg:block"
+                            >
++                             3
+-                             Bag
+                            ...
+                  ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at span (<anonymous>)
+    at Header (src/components/Header.tsx:58:27)
+    at RootLayout (src\app\layout.tsx:22:13)
+  56 |             <Link href="/cart" className="flex flex-col items-center gap-1 relative">
+  57 |               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 ...
+> 58 |               {count>0 && <span className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] flex items-center justify-center rounded-full px-1">{count}</span>}
+     |                           ^
+  59 |               <span className="text-[9px] tracking-widest uppercase hidden lg:block">Bag</span>
+  60 |             </Link>
+  61 |           </div>
+ GET /products?category=olahan-pangan 200 in 200ms (next.js: 13ms, application-code: 186ms)
+ GET /products?category=olahan-pangan 200 in 138ms (next.js: 7ms, application-code: 131ms)
+ GET /suppliers 200 in 130ms (next.js: 65ms, application-code: 65ms)
+ GET /suppliers 200 in 49ms (next.js: 8ms, application-code: 41ms)
+ GET /suppliers 200 in 45ms (next.js: 8ms, application-code: 37ms)
+ GET /suppliers 200 in 49ms (next.js: 7ms, application-code: 41ms)
+ GET /suppliers 200 in 50ms (next.js: 9ms, application-code: 41ms)
+ GET /suppliers 200 in 54ms (next.js: 8ms, application-code: 46ms)
+ GET /suppliers 200 in 51ms (next.js: 7ms, application-code: 44ms)
+ GET /suppliers 200 in 45ms (next.js: 7ms, application-code: 38ms)
+ GET /suppliers 200 in 159ms (next.js: 9ms, application-code: 150ms)
+ GET /products 200 in 62ms (next.js: 9ms, application-code: 53ms)
+ GET /products?category=barang-bekas 200 in 52ms (next.js: 9ms, application-code: 43ms)
+ GET /products?category=tanaman-hias 200 in 65ms (next.js: 10ms, application-code: 55ms)
+ GET /products?category=komoditi-petani 200 in 49ms (next.js: 10ms, application-code: 40ms)
+ GET /products 200 in 48ms (next.js: 9ms, application-code: 39ms)
+ GET /products 200 in 191ms (next.js: 6ms, application-code: 184ms)
+ GET /suppliers 200 in 51ms (next.js: 7ms, application-code: 45ms)
+✓ Compiled in 452ms
+ GET /products?category=olahan-pangan 200 in 1182ms (next.js: 524ms, application-code: 658ms)
+ GET /suppliers 200 in 1187ms (next.js: 651ms, application-code: 536ms)
+ GET /products?category=olahan-pangan 200 in 487ms (next.js: 40ms, application-code: 447ms)
+ GET /suppliers 200 in 480ms (next.js: 94ms, application-code: 386ms)
+ GET /products?category=olahan-pangan 200 in 465ms (next.js: 15ms, application-code: 450ms)
+ GET /suppliers 200 in 461ms (next.js: 93ms, application-code: 368ms)
+ GET /products?category=olahan-pangan 200 in 439ms (next.js: 12ms, application-code: 427ms)
+ GET /suppliers 200 in 438ms (next.js: 71ms, application-code: 367ms)
+ GET /products?category=olahan-pangan 200 in 444ms (next.js: 20ms, application-code: 424ms)
+ GET /suppliers 200 in 450ms (next.js: 73ms, application-code: 377ms)
+ GET /products?category=olahan-pangan 200 in 439ms (next.js: 15ms, application-code: 423ms)
+ GET /suppliers 200 in 436ms (next.js: 68ms, application-code: 368ms)
+ GET /products?category=olahan-pangan 200 in 435ms (next.js: 17ms, application-code: 418ms)
+ GET /suppliers 200 in 444ms (next.js: 76ms, application-code: 367ms)
+ GET /products?category=olahan-pangan 200 in 434ms (next.js: 18ms, application-code: 416ms)
+ GET /suppliers 200 in 492ms (next.js: 71ms, application-code: 421ms)
+ GET /products?category=olahan-pangan 200 in 437ms (next.js: 17ms, application-code: 420ms)
+ GET /suppliers 200 in 492ms (next.js: 68ms, application-code: 424ms)
+ GET /products?category=olahan-pangan 200 in 504ms (next.js: 18ms, application-code: 486ms)
+ GET /suppliers 200 in 502ms (next.js: 68ms, application-code: 434ms)
+ GET /products?category=olahan-pangan 200 in 520ms (next.js: 16ms, application-code: 504ms)
+ GET /suppliers 200 in 518ms (next.js: 71ms, application-code: 447ms)
+ GET /products?category=olahan-pangan 200 in 451ms (next.js: 10ms, application-code: 441ms)
+ GET /suppliers 200 in 510ms (next.js: 68ms, application-code: 442ms)
+ GET /products?category=olahan-pangan 200 in 461ms (next.js: 11ms, application-code: 450ms)
+ GET /suppliers 200 in 516ms (next.js: 73ms, application-code: 443ms)
+ GET /products?category=olahan-pangan 200 in 455ms (next.js: 19ms, application-code: 436ms)
+ GET /suppliers 200 in 508ms (next.js: 76ms, application-code: 432ms)
+ GET /products?category=olahan-pangan 200 in 454ms (next.js: 11ms, application-code: 443ms)
+ GET /suppliers 200 in 585ms (next.js: 70ms, application-code: 515ms)
+ GET /products?category=olahan-pangan 200 in 544ms (next.js: 27ms, application-code: 517ms)
+ GET /suppliers 200 in 585ms (next.js: 74ms, application-code: 511ms)
+ GET /products?category=olahan-pangan 200 in 532ms (next.js: 14ms, application-code: 518ms)
+ GET /suppliers 200 in 588ms (next.js: 70ms, application-code: 518ms)
+ GET /products?category=olahan-pangan 200 in 541ms (next.js: 21ms, application-code: 520ms)
+ GET /suppliers 200 in 659ms (next.js: 146ms, application-code: 513ms)
+ GET /products?category=olahan-pangan 200 in 521ms (next.js: 15ms, application-code: 505ms)
+ GET /suppliers 200 in 583ms (next.js: 72ms, application-code: 511ms)
+ GET /products?category=olahan-pangan 200 in 449ms (next.js: 14ms, application-code: 435ms)
+ GET /suppliers 200 in 447ms (next.js: 77ms, application-code: 370ms)
+ GET /products?category=olahan-pangan 200 in 300ms (next.js: 15ms, application-code: 285ms)
+ GET /suppliers 200 in 304ms (next.js: 75ms, application-code: 228ms)
+ GET /products?category=olahan-pangan 200 in 164ms (next.js: 16ms, application-code: 148ms)
+ GET /suppliers 200 in 162ms (next.js: 72ms, application-code: 89ms)
+ GET /suppliers 200 in 178ms (next.js: 28ms, application-code: 150ms)
+ GET /products?category=olahan-pangan 200 in 177ms (next.js: 102ms, application-code: 75ms)
+✓ Compiled in 543ms
+ GET /suppliers 200 in 214ms (next.js: 124ms, application-code: 90ms)
+ GET /products?category=olahan-pangan 200 in 220ms (next.js: 56ms, application-code: 164ms)
+✓ Compiled in 120ms
+ GET /products?category=olahan-pangan 200 in 189ms (next.js: 19ms, application-code: 170ms)
+ GET /suppliers 200 in 92ms (next.js: 18ms, application-code: 74ms)
+✓ Compiled in 532ms
+ GET /products?category=olahan-pangan 200 in 287ms (next.js: 68ms, application-code: 219ms)
+ GET /suppliers 200 in 287ms (next.js: 168ms, application-code: 119ms)
+✓ Compiled in 271ms
+ GET /products?category=olahan-pangan 200 in 272ms (next.js: 22ms, application-code: 250ms)
+ GET /suppliers 200 in 134ms (next.js: 31ms, application-code: 103ms)
+⨯ ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  [90m48 |[0m ...
+  [90m49 |[0m ...[32m0"[0m>[33mMasuk[0m</button>
+[31m[1m>[0m [90m50 |[0m ...[32mar: hubungi admin atau gunakan akun dummy"[0m))}} className=[32m"underline font-bold text-blac..[0m.
+  [90m   |[0m                                               [31m[1m^[0m
+  [90m51 |[0m ...
+  [90m52 |[0m ...
+  [90m53 |[0m ...
+
+Parsing ecmascript source code failed
+
+
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+○ Compiling /_error ...
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+ GET /login 500 in 6.6s (next.js: 6.2s, application-code: 426ms)
+⨯ ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  [90m48 |[0m ...
+  [90m49 |[0m ...[32m0"[0m>[33mMasuk[0m</button>
+[31m[1m>[0m [90m50 |[0m ...[32mar: hubungi admin atau gunakan akun dummy"[0m))}} className=[32m"underline font-bold text-blac..[0m.
+  [90m   |[0m                                               [31m[1m^[0m
+  [90m51 |[0m ...
+  [90m52 |[0m ...
+  [90m53 |[0m ...
+
+Parsing ecmascript source code failed
+
+
+ GET /login 500 in 49ms (next.js: 18ms, application-code: 31ms)
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+⨯ ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  [90m48 |[0m ...
+  [90m49 |[0m ...[32m0"[0m>[33mMasuk[0m</button>
+[31m[1m>[0m [90m50 |[0m ...[32mar: hubungi admin atau gunakan akun dummy"[0m))}} className=[32m"underline font-bold text-blac..[0m.
+  [90m   |[0m                                               [31m[1m^[0m
+  [90m51 |[0m ...
+  [90m52 |[0m ...
+  [90m53 |[0m ...
+
+Parsing ecmascript source code failed
+
+
+ GET /login 500 in 41ms (next.js: 17ms, application-code: 24ms)
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+⨯ ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  [90m48 |[0m ...
+  [90m49 |[0m ...[32m0"[0m>[33mMasuk[0m</button>
+[31m[1m>[0m [90m50 |[0m ...[32mar: hubungi admin atau gunakan akun dummy"[0m))}} className=[32m"underline font-bold text-blac..[0m.
+  [90m   |[0m                                               [31m[1m^[0m
+  [90m51 |[0m ...
+  [90m52 |[0m ...
+  [90m53 |[0m ...
+
+Parsing ecmascript source code failed
+
+
+ GET /login 500 in 73ms (next.js: 26ms, application-code: 47ms)
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] Uncaught Error: ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/login/page.tsx:50:191)
+    at <unknown> (Error: (./src/app/login/page.tsx:50:191)
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+⨯ ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  [90m48 |[0m ...
+  [90m49 |[0m ...[32m0"[0m>[33mMasuk[0m</button>
+[31m[1m>[0m [90m50 |[0m ...[32mar: hubungi admin atau gunakan akun dummy"[0m))}} className=[32m"underline font-bold text-blac..[0m.
+  [90m   |[0m                                               [31m[1m^[0m
+  [90m51 |[0m ...
+  [90m52 |[0m ...
+  [90m53 |[0m ...
+
+Parsing ecmascript source code failed
+
+
+ GET /login 500 in 67ms (next.js: 38ms, application-code: 29ms)
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] Uncaught Error: ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/login/page.tsx:50:191)
+    at <unknown> (Error: (./src/app/login/page.tsx:50:191)
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+⨯ ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  [90m48 |[0m ...
+  [90m49 |[0m ...[32m0"[0m>[33mMasuk[0m</button>
+[31m[1m>[0m [90m50 |[0m ...[32mar: hubungi admin atau gunakan akun dummy"[0m))}} className=[32m"underline font-bold text-blac..[0m.
+  [90m   |[0m                                               [31m[1m^[0m
+  [90m51 |[0m ...
+  [90m52 |[0m ...
+  [90m53 |[0m ...
+
+Parsing ecmascript source code failed
+
+
+ GET /login 500 in 44ms (next.js: 20ms, application-code: 25ms)
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] Uncaught Error: ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (Error: ./src/app/login/page.tsx:50:191)
+    at <unknown> (Error: (./src/app/login/page.tsx:50:191)
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+[browser] ./src/app/login/page.tsx:50:191
+Error: Expected '</', got ')'
+  48 | ...
+  49 | ...0">Masuk</button>
+> 50 | ...ar: hubungi admin atau gunakan akun dummy"))}} className="underline font-bold text-blac...
+     |                                               ^
+  51 | ...
+  52 | ...
+  53 | ...
+
+Parsing ecmascript source code failed 
+ GET /login 200 in 755ms (next.js: 76ms, application-code: 680ms)
+ GET /products?category=olahan-pangan 200 in 791ms (next.js: 120ms, application-code: 671ms)
+ GET / 200 in 269ms (next.js: 116ms, application-code: 154ms)
+ GET /products?category=bunga-florist 200 in 47ms (next.js: 7ms, application-code: 40ms)
+ GET /products?category=bunga-florist 200 in 40ms (next.js: 6ms, application-code: 34ms)
+ GET /products?category=komoditi-petani 200 in 48ms (next.js: 8ms, application-code: 41ms)
+ GET /login 200 in 43ms (next.js: 7ms, application-code: 36ms)
+ GET / 200 in 96ms (next.js: 8ms, application-code: 89ms)
+ GET /products?category=komoditi-petani 200 in 46ms (next.js: 7ms, application-code: 39ms)
+ GET /rfq 200 in 118ms (next.js: 75ms, application-code: 43ms)
+ GET /suppliers 200 in 58ms (next.js: 8ms, application-code: 51ms)
+ GET /suppliers 200 in 67ms (next.js: 25ms, application-code: 43ms)
+ GET /products 200 in 47ms (next.js: 6ms, application-code: 41ms)
+ GET / 200 in 98ms (next.js: 7ms, application-code: 90ms)
+ GET /products 200 in 51ms (next.js: 7ms, application-code: 44ms)
+ GET /login 200 in 51ms (next.js: 6ms, application-code: 45ms)
+⚠ Fast Refresh had to perform a full reload when ./src/components/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⚠ Fast Refresh had to perform a full reload when ./src/components/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+✓ Compiled in 161ms
+ GET /login 200 in 727ms (next.js: 62ms, application-code: 665ms)
+ GET /login 200 in 758ms (next.js: 49ms, application-code: 709ms)
+ GET /products?category=olahan-pangan 200 in 764ms (next.js: 154ms, application-code: 610ms)
+ GET /products?category=olahan-pangan 200 in 441ms (next.js: 41ms, application-code: 400ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <body className="min-h-scre...">
+      <AuthProvider>
+        <CartProvider>
+          <Suspense fallback={{...}}>
+            <Header>
+              <header className="sticky top...">
+                <div>
+                <div className="border-b b...">
+                  <div className="max-w-[128...">
+                    <LinkComponent>
+                    <nav>
+                    <div>
+                    <div className="flex items...">
+                      <LinkComponent>
+                      <LinkComponent>
+                      <button>
+                      <LinkComponent href="/cart" className="flex flex-...">
+                        <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                          <svg>
+                          <span
++                           className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] ..."
+-                           className="text-[9px] tracking-widest uppercase hidden lg:block"
+                          >
++                           3
+-                           Bag
+                          ...
+                ...
+          ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at span (<anonymous>)
+    at Header (src/components/Header.tsx:67:27)
+    at RootLayout (src\app\layout.tsx:24:15)
+  65 |             <Link href="/cart" className="flex flex-col items-center gap-1 relative">
+  66 |               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 ...
+> 67 |               {count>0 && <span className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] flex items-center justify-center rounded-full px-1">{count}</span>}
+     |                           ^
+  68 |               <span className="text-[9px] tracking-widest uppercase hidden lg:block">Bag</span>
+  69 |             </Link>
+  70 |           </div>
+ GET /login 200 in 150ms (next.js: 6ms, application-code: 144ms)
+ GET /login 200 in 144ms (next.js: 6ms, application-code: 138ms)
+✓ Compiled in 196ms
+ GET /products?category=olahan-pangan 200 in 674ms (next.js: 209ms, application-code: 465ms)
+ GET /products?category=olahan-pangan 200 in 485ms (next.js: 15ms, application-code: 470ms)
+ GET /products?category=olahan-pangan 200 in 431ms (next.js: 14ms, application-code: 417ms)
+ GET /products?category=olahan-pangan 200 in 266ms (next.js: 12ms, application-code: 254ms)
+ GET /products?category=olahan-pangan 200 in 286ms (next.js: 12ms, application-code: 274ms)
+ GET /products?category=olahan-pangan 200 in 302ms (next.js: 10ms, application-code: 292ms)
+ GET /products?category=olahan-pangan 200 in 300ms (next.js: 15ms, application-code: 285ms)
+ GET /products?category=olahan-pangan 200 in 281ms (next.js: 12ms, application-code: 269ms)
+ GET /products?category=olahan-pangan 200 in 265ms (next.js: 11ms, application-code: 254ms)
+ GET /products?category=olahan-pangan 200 in 251ms (next.js: 11ms, application-code: 240ms)
+ GET /products?category=olahan-pangan 200 in 247ms (next.js: 9ms, application-code: 239ms)
+ GET /products?category=olahan-pangan 200 in 423ms (next.js: 10ms, application-code: 413ms)
+ GET /products?category=olahan-pangan 200 in 435ms (next.js: 10ms, application-code: 425ms)
+ GET /login 200 in 531ms (next.js: 39ms, application-code: 492ms)
+ GET /products?category=olahan-pangan 200 in 528ms (next.js: 105ms, application-code: 423ms)
+ GET /login 200 in 506ms (next.js: 11ms, application-code: 495ms)
+ GET /products?category=olahan-pangan 200 in 652ms (next.js: 77ms, application-code: 575ms)
+ GET /products?category=olahan-pangan 200 in 598ms (next.js: 94ms, application-code: 503ms)
+ GET /login 200 in 602ms (next.js: 19ms, application-code: 583ms)
+ GET /login 200 in 575ms (next.js: 18ms, application-code: 557ms)
+ GET /products?category=olahan-pangan 200 in 582ms (next.js: 80ms, application-code: 502ms)
+ GET /login 200 in 508ms (next.js: 14ms, application-code: 494ms)
+ GET /products?category=olahan-pangan 200 in 582ms (next.js: 87ms, application-code: 494ms)
+ GET /login 200 in 488ms (next.js: 12ms, application-code: 477ms)
+ GET /products?category=olahan-pangan 200 in 570ms (next.js: 77ms, application-code: 493ms)
+ GET /login 200 in 508ms (next.js: 14ms, application-code: 494ms)
+ GET /products?category=olahan-pangan 200 in 633ms (next.js: 84ms, application-code: 550ms)
+ GET /login 200 in 829ms (next.js: 22ms, application-code: 807ms)
+ GET /products?category=olahan-pangan 200 in 829ms (next.js: 85ms, application-code: 744ms)
+ GET /login 200 in 795ms (next.js: 16ms, application-code: 779ms)
+ GET /products?category=olahan-pangan 200 in 873ms (next.js: 90ms, application-code: 783ms)
+ GET /login 200 in 731ms (next.js: 26ms, application-code: 705ms)
+ GET /products?category=olahan-pangan 200 in 826ms (next.js: 162ms, application-code: 664ms)
+ GET /login 200 in 495ms (next.js: 12ms, application-code: 483ms)
+ GET /products?category=olahan-pangan 200 in 649ms (next.js: 144ms, application-code: 505ms)
+ GET /login 200 in 458ms (next.js: 17ms, application-code: 441ms)
+ GET /login 200 in 443ms (next.js: 18ms, application-code: 425ms)
+ GET /login 200 in 408ms (next.js: 26ms, application-code: 382ms)
+ GET /login 200 in 266ms (next.js: 12ms, application-code: 254ms)
+ GET /login 200 in 258ms (next.js: 10ms, application-code: 248ms)
+ GET /login 200 in 241ms (next.js: 11ms, application-code: 230ms)
+ GET /login 200 in 217ms (next.js: 8ms, application-code: 209ms)
+ GET /login 200 in 228ms (next.js: 8ms, application-code: 220ms)
+ GET /login 200 in 227ms (next.js: 8ms, application-code: 219ms)
+ GET /login 200 in 234ms (next.js: 25ms, application-code: 209ms)
+ GET /login 200 in 211ms (next.js: 8ms, application-code: 202ms)
+ GET /login 200 in 144ms (next.js: 10ms, application-code: 134ms)
+ GET /login 200 in 73ms (next.js: 8ms, application-code: 64ms)
+✓ Compiled in 168ms
+ GET /login 200 in 187ms (next.js: 29ms, application-code: 158ms)
+ GET /products?category=olahan-pangan 200 in 162ms (next.js: 76ms, application-code: 86ms)
+ GET /login 200 in 516ms (next.js: 18ms, application-code: 499ms)
+ GET /register 200 in 2.5s (next.js: 2.3s, application-code: 216ms)
+ GET / 200 in 149ms (next.js: 41ms, application-code: 108ms)
+ GET /suppliers 200 in 81ms (next.js: 33ms, application-code: 47ms)
+ GET /suppliers 200 in 137ms (next.js: 6ms, application-code: 131ms)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <SegmentViewNode type="layout" pagePath="layout.tsx">
+      <SegmentTrieNode>
+      <link>
+      <script>
+      <RootLayout>
+        <html lang="id" className="inter_5901...">
+          <body className="min-h-scre...">
+            <AuthProvider>
+              <CartProvider>
+                <Suspense fallback={{...}}>
+                  <Header>
+                    <header className="sticky top...">
+                      <div>
+                      <div className="border-b b...">
+                        <div className="max-w-[128...">
+                          <LinkComponent>
+                          <nav>
+                          <div>
+                          <div className="flex items...">
+                            <LinkComponent>
++                           <div className="hidden md:flex items-center gap-2 border border-neutral-200 px-3 py-1">
+-                           <a className="hidden md:flex flex-col items-center gap-1 hover:opacity-60" href="/login">
+                            ...
+                      ...
+                ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at Header (src/components/Header.tsx:51:15)
+    at RootLayout (src\app\layout.tsx:24:15)
+  49 |             <Link href="/rfq" className="hidden md:block tracking-[0.1em] uppercase font-semibold hover:opacity-60">RFQ</Link>
+  50 |             {isLogged ? (
+> 51 |               <div className="hidden md:flex items-center gap-2 border border-neutral-200 px-3 py-1">
+     |               ^
+  52 |                 <span className="text-[11px] font-bold truncate max-w-[100px]">{user?.name}</span>
+  53 |                 <button onClick={logout} className="text-[10px] tracking-widest uppercase border border-black px-2 py-1 font-bold">Keluar</button>
+  54 |               </div>
+ GET /products 200 in 54ms (next.js: 11ms, application-code: 43ms)
+ GET /cart 200 in 124ms (next.js: 78ms, application-code: 46ms)
+ GET /suppliers 200 in 47ms (next.js: 9ms, application-code: 38ms)
+ GET /suppliers 200 in 21ms (next.js: 7ms, application-code: 14ms)
+ GET /suppliers 200 in 61ms (next.js: 6ms, application-code: 55ms)
+ GET /suppliers 200 in 19ms (next.js: 8ms, application-code: 11ms)
+ GET /suppliers 200 in 42ms (next.js: 6ms, application-code: 36ms)
+ GET /products?category=komoditi-petani 200 in 47ms (next.js: 7ms, application-code: 40ms)
+ GET /products?category=barang-bekas 200 in 48ms (next.js: 9ms, application-code: 39ms)
+ GET /products?category=bunga-florist 200 in 43ms (next.js: 6ms, application-code: 36ms)
+ GET /products?category=komoditi-petani 200 in 44ms (next.js: 8ms, application-code: 36ms)
+ GET /products?category=barang-bekas 200 in 39ms (next.js: 6ms, application-code: 32ms)
+ GET /products?category=olahan-pangan 200 in 47ms (next.js: 7ms, application-code: 41ms)
+ GET /register 200 in 188ms (next.js: 28ms, application-code: 160ms)
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <body className="min-h-scre...">
+      <AuthProvider>
+        <CartProvider>
+          <Suspense fallback={{...}}>
+            <Header>
+              <header className="sticky top...">
+                <div>
+                <div className="border-b b...">
+                  <div className="max-w-[128...">
+                    <LinkComponent>
+                    <nav>
+                    <div>
+                    <div className="flex items...">
+                      <LinkComponent>
+                      <LinkComponent>
+                      <button>
+                      <LinkComponent href="/cart" className="flex flex-...">
+                        <a className="flex flex-..." ref={function} onClick={function onClick} ...>
+                          <svg>
+                          <span
++                           className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] ..."
+-                           className="text-[9px] tracking-widest uppercase hidden lg:block"
+                          >
++                           3
+-                           Bag
+                          ...
+                ...
+          ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at span (<anonymous>)
+    at Header (src/components/Header.tsx:67:27)
+    at RootLayout (src\app\layout.tsx:24:15)
+  65 |             <Link href="/cart" className="flex flex-col items-center gap-1 relative">
+  66 |               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 ...
+> 67 |               {count>0 && <span className="absolute -top-1 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] flex items-center justify-center rounded-full px-1">{count}</span>}
+     |                           ^
+  68 |               <span className="text-[9px] tracking-widest uppercase hidden lg:block">Bag</span>
+  69 |             </Link>
+  70 |           </div>
+ GET /products?category=barang-bekas 200 in 49ms (next.js: 7ms, application-code: 42ms)
+ GET /products?category=komoditi-petani 200 in 46ms (next.js: 6ms, application-code: 39ms)
+ GET /products?category=tanaman-hias 200 in 45ms (next.js: 7ms, application-code: 38ms)
+ GET /login 200 in 68ms (next.js: 10ms, application-code: 58ms)
